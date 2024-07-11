@@ -1,14 +1,16 @@
-# Implementação do Standard MIMS para BioData.pt
+# Implementation of MIMS Standard for BioData.pt
 
-Este repositório contém o código necessário para a implementação do standard MIMS (Minimum Information about a Microarray Experiment) para o BioData.pt.
+This repository contains the code required for the implementation of the MIMS (Minimum Information about a Microarray Experiment) standard for BioData.pt.
 
-## Instruções de Upload
+## Upload Instructions: 
 
-Para realizar o upload deste código para o servidor, siga os passos descritos no website https://guides.dataverse.org/en/latest/admin/metadatacustomization.html#id29:
+To upload this code to the server, follow the steps described below:
 
-1. Faça o upload do arquivo de texto contendo o código para o servidor. O arquivo de código deve estar no formato TSV (Tab-Separated Values).
+1. Upload the text file containing the code to the server. The code file should be in TSV (Tab-Separated Values) format.
 
-2. Use o seguinte comando `curl` para carregar o novo bloco de metadados:
+2. Use the following `curl` command to load the new metadata block:
 
    ```sh
    curl http://localhost:8080/api/admin/datasetfield/load -H "Content-type: text/tab-separated-values" -X POST --upload-file /tmp/new-metadata-block.tsv
+
+Upload documentation: [https://guides.dataverse.org/en/latest/admin/metadatacustomization.html#id29](https://guides.dataverse.org/en/latest/admin/metadatacustomization.html#id29)
